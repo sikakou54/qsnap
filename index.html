@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO基本メタタグ -->
+    <title>QSnap - QRコードリーダー＆データ転送 | PC⇔スマホ、QRで一瞬</title>
+    <meta name="description" content="【基本無料】PC⇔スマホ間でテキスト・ファイルをQRコードで即転送。QRコードリーダーとしても使える。アカウント不要。iOS/Android/PC対応。">
+    <meta name="keywords" content="QSnap, QRコードリーダー, QRコード読み取り, データ転送, テキスト転送, ファイル転送, PC連携, PC転送, ブラウザ転送, 端末間転送, 無料アプリ, QRスキャナー">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="QSnap">
+
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="ja" href="https://q-snap.net/">
+    <link rel="alternate" hreflang="x-default" href="https://q-snap.net/">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://q-snap.net/">
+
+    <!-- OGP (Open Graph Protocol) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="QSnap - QRコードリーダー＆データ転送">
+    <meta property="og:description" content="【基本無料】PC⇔スマホ間でテキスト・ファイルをQRコードで即転送。ケーブル不要・ブラウザ対応。アカウント不要。iOS/Android/PC対応。">
+    <meta property="og:url" content="https://q-snap.net/">
+    <meta property="og:site_name" content="QSnap">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="https://q-snap.net/image/ogp.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QSnap - QRコードリーダー＆データ転送">
+    <meta name="twitter:description" content="PC⇔スマホ間でテキスト・ファイルをQRコードで即転送。ケーブル不要・ブラウザ対応。アカウント不要。iOS/Android/PC対応。">
+    <meta name="twitter:image" content="https://q-snap.net/image/ogp.png">
+
+    <!-- 構造化データ (JSON-LD) - SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "QSnap",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "iOS 13.4+, Android 5.0+, Web (Chrome, Safari, Edge)",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "JPY",
+            "description": "基本無料 - Proプラン（有料）あり",
+            "availability": "https://schema.org/InStock"
+        },
+        "description": "PC⇔スマホ間でテキスト・ファイルをQRコードで即転送。QRコードリーダーとしても使える。アカウント不要で利用開始。",
+        "featureList": [
+            "PC⇔スマホ間転送（Web版対応）",
+            "QRコード読み取り・スキャナー",
+            "テキストからQRコード生成",
+            "テキスト転送（最大1MB）",
+            "ファイル転送（無料:最大10MB / Pro:最大1GB）",
+            "送受信履歴管理",
+            "アカウント不要で利用開始・基本無料"
+        ],
+        "inLanguage": ["ja", "en"],
+        "softwareVersion": "1.1.0"
+    }
+    </script>
+
+    <!-- 構造化データ (JSON-LD) - WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "QSnap",
+        "url": "https://q-snap.net/",
+        "description": "QRコードの読み取りも、テキスト・ファイルの転送もこれ1つ。QRを見せるだけでデータが届くアプリ",
+        "inLanguage": "ja"
+    }
+    </script>
+
+    <!-- 構造化データ (JSON-LD) - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "QSnap",
+        "url": "https://q-snap.net/",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "qsnap.developer@gmail.com",
+            "contactType": "customer support"
+        }
+    }
+    </script>
+
+    <!-- 構造化データ (JSON-LD) - FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "QSnapは無料で使えますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "はい、基本機能は無料でお使いいただけます。QRコードの読み取り・テキスト転送・ファイル転送（最大10MB）は無料です。オプションのProプラン（月額/年額）にアップグレードすると、広告の非表示とファイル転送の上限が最大1GBに拡大されます。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "アカウント登録は必要ですか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "基本機能のご利用にはアカウント登録は一切不要です。ダウンロードしたら、そのまますぐお使いいただけます。Proプランの購入時のみ、Apple IDまたはGoogleアカウントでのサインインが必要です。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "普通のQRコードリーダーとしても使えますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "はい、一般的なQRコードリーダーとしてもお使いいただけます。URL、テキスト、Wi-Fi情報など、あらゆるQRコードをスキャンできます。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Proプランとは何ですか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "月額または年額のサブスクリプションで、広告の非表示とファイル転送の上限拡大（最大1GB）をご利用いただけます。サブスクリプションはApp Store / Google Play経由で購入でき、いつでもキャンセルできます。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "データ転送にインターネット接続は必要ですか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "はい、テキスト・ファイルの転送にはインターネット接続が必要です。データは一時的にサーバーにアップロードされ、24時間後に自動削除されます。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "どんなファイルを送れますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "写真、ドキュメントなどを送信できます。無料プランは最大10MB、Proプランなら最大1GBまで対応。複数ファイルの一括送信にも対応し、受信側はZIPでまとめてダウンロードできます。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "送ったデータはどうなりますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "転送データはサーバーに一時的にアップロードされ、24時間後に自動削除されます。送受信履歴はお使いの端末内にのみ保存されます。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "PCからも使えますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "はい、PCのブラウザからQSnap Web版をお使いいただけます。インストール不要で、QRコードの生成・読み取り・ファイル転送がすべてブラウザ上で完結します。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "PC⇔スマホ間の転送はどうやりますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "PC版Web（ブラウザ）でQRコードを生成し、スマホのQSnapアプリで読み取るか、逆にスマホで生成したQRコードをPCのWebカメラで読み取ります。ファイル転送の場合は、送信側でアップロード後に表示されるQRコードを受信側でスキャンしてダウンロードします。"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- 構造化データ (JSON-LD) - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ホーム",
+                "item": "https://q-snap.net/"
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #059669;
+            --primary-dark: #047857;
+            --primary-light: #34D399;
+            --accent: #34C759;
+            --text-primary: #1a1a2e;
+            --text-secondary: #4a4a6a;
+            --text-muted: #8a8aa3;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --border: #e2e8f0;
+            --gradient: linear-gradient(135deg, #34D399 0%, #047857 100%);
+            --gradient-soft: linear-gradient(135deg, rgba(5, 150, 105, 0.08) 0%, rgba(4, 120, 87, 0.08) 100%);
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+            --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            overflow-x: hidden;
+        }
+
+        /* Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 100;
+            border-radius: 0 0 var(--radius-sm) 0;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Navigation */
+        .site-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            padding: 20px 24px;
+        }
+
+        .site-nav {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            font-size: 20px;
+            font-weight: 800;
+            color: white;
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ========================
+           Hero Section
+           ======================== */
+        .hero {
+            background: var(--gradient);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 120px 24px 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 80%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(255,255,255,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .hero-text {
+            flex: 1;
+            color: white;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 32px;
+        }
+
+        .hero-title {
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(16px, 2vw, 20px);
+            line-height: 1.8;
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 520px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        /* Store Badges */
+        .store-badges {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .store-badge {
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .store-badge:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .store-badge img {
+            display: block;
+            height: 48px;
+            width: auto;
+        }
+
+        .hero-visual {
+            flex: 0 0 320px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-phone-carousel {
+            position: relative;
+            width: 280px;
+            aspect-ratio: 9 / 19.5;
+        }
+
+        .hero-phone-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            border-radius: 24px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .hero-phone-img.active {
+            opacity: 1;
+        }
+
+        @media (max-width: 900px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 48px;
+            }
+
+            .hero-subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-actions {
+                justify-content: center;
+            }
+
+            .hero-visual {
+                flex: none;
+            }
+
+            .hero-phone-carousel {
+                width: 240px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                min-height: auto;
+                padding: 100px 20px 60px;
+            }
+
+            .hero-visual {
+                display: none;
+            }
+        }
+
+        /* ========================
+           Section Common
+           ======================== */
+        .section {
+            padding: 100px 24px;
+        }
+
+        .section-alt {
+            background: var(--bg-secondary);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-label {
+            display: inline-block;
+            background: var(--gradient-soft);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 800;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+            line-height: 1.3;
+        }
+
+        .section-desc {
+            font-size: 16px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 16px auto 0;
+            line-height: 1.8;
+        }
+
+        /* ========================
+           Scenes Section
+           ======================== */
+        .scenes-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .scene-card {
+            background: white;
+            border-radius: var(--radius-md);
+            padding: 36px 28px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .scene-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+
+        .scene-icon {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .scene-card h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .scene-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            .scenes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ========================
+           How It Works Section
+           ======================== */
+        .steps-container {
+            display: flex;
+            gap: 32px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .steps-container::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 15%;
+            right: 15%;
+            height: 2px;
+            background: var(--border);
+        }
+
+        .step-item {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 800;
+            color: white;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
+        }
+
+        .step-item h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .step-item p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            .steps-container {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .steps-container::before {
+                top: 0;
+                bottom: 0;
+                left: 40px;
+                right: auto;
+                width: 2px;
+                height: auto;
+            }
+
+            .step-item {
+                display: flex;
+                text-align: left;
+                gap: 24px;
+            }
+
+            .step-number {
+                width: 56px;
+                height: 56px;
+                flex-shrink: 0;
+                margin: 0;
+                font-size: 22px;
+            }
+        }
+
+        /* ========================
+           Why Section (Benefits)
+           ======================== */
+        .why-section {
+            background: var(--gradient);
+            padding: 100px 24px;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .why-card {
+            text-align: center;
+            color: white;
+        }
+
+        .why-icon {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 16px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .why-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .why-card p {
+            font-size: 14px;
+            opacity: 0.85;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 900px) {
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ========================
+           Features Section
+           ======================== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: var(--radius-md);
+            padding: 40px 28px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+
+        .feature-icon-wrap {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 20px;
+            background: var(--gradient-soft);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+
+        .feature-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ========================
+           Plans Section
+           ======================== */
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .plan-card {
+            background: white;
+            border-radius: var(--radius-md);
+            padding: 40px 28px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .plan-card.plan-pro {
+            border-color: var(--primary);
+            position: relative;
+        }
+
+        .plan-badge {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient);
+            color: white;
+            padding: 4px 20px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .plan-name {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .plan-price {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .plan-features {
+            list-style: none;
+            text-align: left;
+        }
+
+        .plan-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 15px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .plan-features li:last-child {
+            border-bottom: none;
+        }
+
+        .plan-check {
+            color: var(--primary);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 600px) {
+            .plans-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .plan-card {
+                background: var(--bg-secondary);
+            }
+        }
+
+        /* ========================
+           FAQ Section
+           ======================== */
+        .faq-list {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 12px;
+            overflow: hidden;
+            transition: border-color 0.3s;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary);
+        }
+
+        .faq-question {
+            padding: 20px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            cursor: default;
+        }
+
+        .faq-q-mark {
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .faq-answer {
+            padding: 0 24px 20px 52px;
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* ========================
+           CTA Section
+           ======================== */
+        .cta-section {
+            text-align: center;
+            padding: 80px 24px;
+            background: var(--bg-secondary);
+        }
+
+        .cta-title {
+            font-size: clamp(24px, 3vw, 36px);
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+
+        .cta-desc {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* ========================
+           Footer
+           ======================== */
+        .site-footer {
+            background: #1a1a2e;
+            color: rgba(255,255,255,0.7);
+            padding: 48px 24px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .footer-logo {
+            font-size: 18px;
+            font-weight: 800;
+            color: white;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-copy {
+            width: 100%;
+            text-align: center;
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+        }
+
+        /* ========================
+           Animations
+           ======================== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* ========================
+           Dark Mode
+           ======================== */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-primary: #e8e8f0;
+                --text-secondary: #a0a0b8;
+                --text-muted: #6a6a82;
+                --bg-primary: #0f0f1a;
+                --bg-secondary: #1a1a2e;
+                --bg-tertiary: #252540;
+                --border: #2a2a45;
+            }
+
+            .scene-card,
+            .feature-card {
+                background: var(--bg-secondary);
+            }
+
+            .faq-item {
+                background: var(--bg-secondary);
+            }
+
+            .cta-section {
+                background: var(--bg-secondary);
+            }
+        }
+
+        .btn-web-app {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            background: #059669;
+            border-radius: 100px;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn-web-app:hover {
+            background: #047857;
+        }
+
+        .btn-web-app-hero {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 100px;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn-web-app-hero:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main" class="skip-link">メインコンテンツへスキップ</a>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="site-nav" aria-label="メインナビゲーション">
+            <div class="nav-container">
+                <a href="/" class="nav-logo" aria-label="QSnap ホーム">QSnap</a>
+                <ul class="nav-links">
+                    <li><a href="#scenes">利用シーン</a></li>
+                    <li><a href="#how-it-works">使い方</a></li>
+                    <li><a href="#features">機能</a></li>
+                    <li><a href="#plans">プラン</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="app.html" style="background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: 100px;">Web版</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- ========================
+             Hero Section
+             ======================== -->
+        <section class="hero" aria-label="QSnap紹介">
+            <div class="hero-content fade-in">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span>&#x1F4F1;</span> QRコードリーダー＆PC⇔スマホ転送
+                    </div>
+                    <h1 class="hero-title">PC ⇔ スマホ、<br>QRで一瞬。</h1>
+                    <p class="hero-subtitle">PCのブラウザからスマホへ、スマホからPCへ。テキストもファイルもQRコードで転送完了。ケーブル不要・アカウント不要・無料で使える。</p>
+                    <div class="hero-actions">
+                        <div class="store-badges">
+                            <!-- TODO: ストアURL確定後に差し替え -->
+                            <a href="#" class="store-badge" aria-label="App Storeでダウンロード">
+                                <img src="image/ios-badge.svg" alt="App Storeからダウンロード" height="48">
+                            </a>
+                            <!-- TODO: ストアURL確定後に差し替え -->
+                            <a href="#" class="store-badge" aria-label="Google Playで手に入れよう">
+                                <img src="image/android-badge.svg" alt="Google Playで手に入れよう" height="48">
+                            </a>
+                        </div>
+                        <a href="app.html" class="btn-web-app-hero">&#x1F4BB; PC版をブラウザで使う</a>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-phone-carousel">
+                        <img src="image/top.png" alt="QSnap アプリ画面" class="hero-phone-img active">
+                        <img src="image/top2.png" alt="QSnap アプリ画面" class="hero-phone-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+             Scenes Section
+             ======================== -->
+        <section id="scenes" class="section section-alt" aria-label="こんな場面に">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">SCENES</span>
+                    <h2 class="section-title">こんなとき、QSnapが使えます</h2>
+                </div>
+                <div class="scenes-grid">
+                    <div class="scene-card animate-on-scroll">
+                        <div class="scene-icon">&#x1F4BB;</div>
+                        <h3>PCからスマホにテキストを送りたい</h3>
+                        <p>PCで調べたURLやメモをスマホに送りたい。QSnap Web版でQRコードを生成し、スマホのカメラで読み取るだけ。メールで自分宛に送る必要なし。</p>
+                    </div>
+                    <div class="scene-card animate-on-scroll">
+                        <div class="scene-icon">&#x1F4F7;</div>
+                        <h3>スマホの写真をPCに取り込みたい</h3>
+                        <p>スマホで撮った写真をPCに送りたい。QSnapでファイルを選んでQRコードを生成。PCのブラウザでスキャンしてダウンロード。ケーブル不要。</p>
+                    </div>
+                    <div class="scene-card animate-on-scroll">
+                        <div class="scene-icon">&#x1F4E4;</div>
+                        <h3>テキストやURLをサッと送りたい</h3>
+                        <p>会議で参考URLを共有、メモをその場で渡すなど。スマホ同士でもテキストを入力してQRを見せるだけ。チャットを開く必要もありません。</p>
+                    </div>
+                    <div class="scene-card animate-on-scroll">
+                        <div class="scene-icon">&#x1F4F1;</div>
+                        <h3>QRコードを読み取りたい</h3>
+                        <p>ポスターや名刺のQRコードをスキャン。URL、テキスト、Wi-Fi情報など、あらゆるQRコードを読み取ってワンタップでコピーできます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+             How It Works Section
+             ======================== -->
+        <section id="how-it-works" class="section" aria-label="使い方">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">HOW IT WORKS</span>
+                    <h2 class="section-title">3ステップで完了</h2>
+                </div>
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h3>テキストを入力 or ファイルを選択</h3>
+                            <p>スマホアプリまたはPC版Web（ブラウザ）で、送りたいデータを準備。QRコードが自動で生成されます</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h3>QRコードを表示 or スキャン</h3>
+                            <p>画面に表示されたQRコードを、受け取り側のカメラで読み取ります。PC⇔スマホでも、スマホ同士でもOK</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h3>受け取り完了</h3>
+                            <p>テキストはその場でコピー、ファイルはワンタップでダウンロード。ケーブルもアカウントも不要</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+             Why QSnap Section
+             ======================== -->
+        <section class="why-section" aria-label="QSnapが選ばれる理由">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" style="color: white;">QRリーダー + データ転送を<br>1つのアプリに</h2>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card animate-on-scroll">
+                        <div class="why-icon">&#x1F50D;</div>
+                        <h3>高速QRコードリーダー</h3>
+                        <p>カメラをかざすだけで即座にスキャン。URL・テキスト・Wi-Fiなど、あらゆるQRコードに対応</p>
+                    </div>
+                    <div class="why-card animate-on-scroll">
+                        <div class="why-icon">&#x1F4E8;</div>
+                        <h3>テキストもファイルも転送</h3>
+                        <p>テキスト最大1MB、ファイル転送対応（無料:10MB / Pro:1GB）。QRコードを見せるだけで相手に届きます</p>
+                    </div>
+                    <div class="why-card animate-on-scroll">
+                        <div class="why-icon">&#x1F6AB;</div>
+                        <h3>アカウント登録ゼロ</h3>
+                        <p>メールアドレスもパスワードも一切不要。ダウンロードして即使えます</p>
+                    </div>
+                    <div class="why-card animate-on-scroll">
+                        <div class="why-icon">&#x1F5D1;</div>
+                        <h3>24時間で自動削除</h3>
+                        <p>転送データはサーバーに一時保存され、24時間後に自動削除。データは残りません</p>
+                    </div>
+                    <div class="why-card animate-on-scroll">
+                        <div class="why-icon">&#x1F4BB;</div>
+                        <h3>PC / スマホ どちらからでも</h3>
+                        <p>PCのブラウザからでもスマホアプリからでも使えます。iPhone・Android・Windows・Mac、OS問わず</p>
+                    </div>
+                    <div class="why-card animate-on-scroll">
+                        <div class="why-icon">&#x1F4B0;</div>
+                        <h3>基本無料で使える</h3>
+                        <p>基本機能は無料。さらに快適に使いたい方向けにProプラン（広告なし・ファイル転送最大1GB）もご用意</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+             Social Proof Section
+             ======================== -->
+        <section class="section" aria-label="ユーザーの声">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">REVIEWS</span>
+                    <h2 class="section-title">ユーザーの声</h2>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card animate-on-scroll">
+                        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="review-text">「PCで開いたURLをスマホに送りたい時にめちゃくちゃ便利。QRかざすだけで完了するのが最高」</p>
+                        <span class="review-author">— App Store レビューより</span>
+                    </div>
+                    <div class="review-card animate-on-scroll delay-1">
+                        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="review-text">「アカウント不要でサクッと使える。ファイル転送もできるので、AirDropの代わりとして重宝しています」</p>
+                        <span class="review-author">— App Store レビューより</span>
+                    </div>
+                    <div class="review-card animate-on-scroll delay-2">
+                        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="review-text">「会議でURLを参加者に配る時に使っています。QRを表示するだけなので手間なし。シンプルで気に入っています」</p>
+                        <span class="review-author">— App Store レビューより</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+             Features Section
+             ======================== -->
+        <section id="features" class="section section-alt" aria-label="主な機能">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">FEATURES</span>
+                    <h2 class="section-title">4つの機能、1つのアプリ</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon-wrap">&#x1F50D;</div>
+                        <h3>QRコードリーダー</h3>
+                        <p>カメラをかざすだけでQRコードを読み取り。結果はワンタップでコピー。URL、テキスト、Wi-Fi情報など幅広く対応。</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon-wrap">&#x26A1;</div>
+                        <h3>テキスト転送</h3>
+                        <p>テキストを入力してQRコードを生成。相手がスキャンするだけで受け取れます。テキスト最大1MB対応。</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon-wrap">&#x1F4C2;</div>
+                        <h3>ファイル転送</h3>
+                        <p>写真やドキュメントをQRコードで送信。無料プランは最大10MB、Proプランなら最大1GB。複数ファイルの一括送信にも対応。</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon-wrap">&#x1F4BB;</div>
+                        <h3>Web版アプリ（PC対応）</h3>
+                        <p>PCのブラウザからQRコードの生成・読み取り・ファイル転送が可能。アプリのインストール不要で、そのまま使えます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+             Plans Section
+             ======================== -->
+        <section id="plans" class="section" aria-label="プラン比較">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">PLANS</span>
+                    <h2 class="section-title">あなたに合ったプランを</h2>
+                    <p class="section-desc">基本機能は無料。もっと快適に使いたい方にはProプラン。</p>
+                </div>
+                <div class="plans-grid">
+                    <div class="plan-card">
+                        <div class="plan-name">Free</div>
+                        <div class="plan-price">無料</div>
+                        <ul class="plan-features">
+                            <li><span class="plan-check">&#x2713;</span> QRコードリーダー</li>
+                            <li><span class="plan-check">&#x2713;</span> テキスト転送（最大1MB）</li>
+                            <li><span class="plan-check">&#x2713;</span> ファイル転送（最大10MB）</li>
+                            <li><span class="plan-check">&#x2713;</span> 送受信履歴</li>
+                            <li><span class="plan-check">&#x2713;</span> Web版（PC対応）</li>
+                            <li style="color: var(--text-muted);">&#x2500;&#x2500; 広告あり</li>
+                        </ul>
+                    </div>
+                    <div class="plan-card plan-pro">
+                        <div class="plan-badge">おすすめ</div>
+                        <div class="plan-name">Pro</div>
+                        <div class="plan-price">月額 / 年額</div>
+                        <ul class="plan-features">
+                            <li><span class="plan-check">&#x2713;</span> QRコードリーダー</li>
+                            <li><span class="plan-check">&#x2713;</span> テキスト転送（最大1MB）</li>
+                            <li><span class="plan-check" style="color: var(--accent);">&#x2713;</span> <strong>ファイル転送（最大1GB）</strong></li>
+                            <li><span class="plan-check">&#x2713;</span> 送受信履歴</li>
+                            <li><span class="plan-check">&#x2713;</span> Web版（PC対応）</li>
+                            <li><span class="plan-check" style="color: var(--accent);">&#x2713;</span> <strong>広告なし</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+             FAQ Section
+             ======================== -->
+        <section id="faq" class="section section-alt" aria-label="よくある質問">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">FAQ</span>
+                    <h2 class="section-title">よくある質問</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            <span class="faq-q-mark">Q</span>
+                            <span>QSnapは無料で使えますか？</span>
+                        </div>
+                        <div class="faq-answer">
+                            はい、基本機能は無料でお使いいただけます。QRコードの読み取り・テキスト転送・ファイル転送（最大10MB）は無料です。オプションのProプラン（月額/年額）にアップグレードすると、広告の非表示とファイル転送の上限が最大1GBに拡大されます。
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            <span class="faq-q-mark">Q</span>
+                            <span>普通のQRコードリーダーとしても使えますか？</span>
+                        </div>
+                        <div class="faq-answer">
+                            はい、一般的なQRコードリーダーとしてもお使いいただけます。URL、テキスト、Wi-Fi情報など、あらゆるQRコードをスキャンできます。読み取った内容はワンタップでコピーできます。
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            <span class="faq-q-mark">Q</span>
+                            <span>アカウント登録は必要ですか？</span>
+                        </div>
+                        <div class="faq-answer">
+                            基本機能のご利用にはアカウント登録は一切不要です。ダウンロードしたら、そのまますぐお使いいただけます。Proプランの購入時のみ、Apple IDまたはGoogleアカウントでのサインインが必要です。
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            <span class="faq-q-mark">Q</span>
+                            <span>どんなファイルを送れますか？</span>
+                        </div>
+                        <div class="faq-answer">
+                            写真、ドキュメントなどを送信できます。無料プランは最大10MB、Proプランなら最大1GBまで対応。複数ファイルの一括送信にも対応し、受信側はZIPでまとめてダウンロードできます。
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            <span class="faq-q-mark">Q</span>
+                            <span>Proプランとは何ですか？</span>
+                        </div>
+                        <div class="faq-answer">
+                            月額または年額のサブスクリプションで、広告の非表示とファイル転送の上限拡大（最大1GB）をご利用いただけます。サブスクリプションはApp Store / Google Play経由で購入でき、いつでもキャンセルできます。
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            <span class="faq-q-mark">Q</span>
+                            <span>データ転送にインターネット接続は必要ですか？</span>
+                        </div>
+                        <div class="faq-answer">
+                            はい、テキスト・ファイルの転送にはインターネット接続が必要です。データは一時的にサーバーにアップロードされ、24時間後に自動削除されます。QRコードの読み取りはオフラインでも可能です。
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            <span class="faq-q-mark">Q</span>
+                            <span>送ったデータはどうなりますか？</span>
+                        </div>
+                        <div class="faq-answer">
+                            転送データはサーバーに一時的にアップロードされ、24時間後に自動削除されます。送受信履歴はお使いの端末内にのみ保存されます。
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            <span class="faq-q-mark">Q</span>
+                            <span>PCからも使えますか？</span>
+                        </div>
+                        <div class="faq-answer">
+                            はい、PCのブラウザからQSnap Web版をお使いいただけます。インストール不要で、QRコードの生成・読み取り・ファイル転送がすべてブラウザ上で完結します。
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            <span class="faq-q-mark">Q</span>
+                            <span>PC⇔スマホ間の転送はどうやりますか？</span>
+                        </div>
+                        <div class="faq-answer">
+                            PC版Web（ブラウザ）でQRコードを生成し、スマホのQSnapアプリで読み取るか、逆にスマホで生成したQRコードをPCのWebカメラで読み取ります。ファイル転送の場合は、送信側でアップロード後に表示されるQRコードを受信側でスキャンしてダウンロードします。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+             CTA Section
+             ======================== -->
+        <section class="cta-section" aria-label="ダウンロード">
+            <h2 class="cta-title">今すぐ始めよう。ダウンロードは無料です</h2>
+            <p class="cta-desc">PC⇔スマホの転送も、QR読み取りも、これ1つで完結</p>
+            <div class="cta-buttons">
+                <!-- TODO: ストアURL確定後に差し替え -->
+                <a href="#" class="store-badge" aria-label="App Storeでダウンロード">
+                    <img src="image/ios-badge.svg" alt="App Storeからダウンロード" height="48">
+                </a>
+                <!-- TODO: ストアURL確定後に差し替え -->
+                <a href="#" class="store-badge" aria-label="Google Playで手に入れよう">
+                    <img src="image/android-badge.svg" alt="Google Playで手に入れよう" height="48">
+                </a>
+                <a href="app.html" class="btn-web-app">&#x1F4BB; PC版をブラウザで使う</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================
+         Footer
+         ======================== -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">QSnap</div>
+            <ul class="footer-links">
+                <li><a href="policy.html">プライバシーポリシー</a></li>
+                <li><a href="terms.html">利用規約</a></li>
+            </ul>
+            <div class="footer-copy">&copy; 2026 QSnap. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            var imgs = document.querySelectorAll('.hero-phone-carousel .hero-phone-img');
+            if (imgs.length < 2) return;
+            var current = 0;
+            setInterval(function() {
+                imgs[current].classList.remove('active');
+                current = (current + 1) % imgs.length;
+                imgs[current].classList.add('active');
+            }, 4000);
+        })();
+
+        // Scroll animation with IntersectionObserver
+        (function() {
+            var targets = document.querySelectorAll('.animate-on-scroll');
+            if (!targets.length || !('IntersectionObserver' in window)) return;
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+            targets.forEach(function(el) { observer.observe(el); });
+        })();
+    </script>
+</body>
+
+</html>
