@@ -18,7 +18,7 @@
         <div class="container">
             <div class="legal-header">
                 <h1 class="legal-title">プライバシーポリシー</h1>
-                <p class="legal-date">最終更新日: 2026年3月11日</p>
+                <p class="legal-date">最終更新日: 2026年3月12日</p>
             </div>
 
             <div class="legal-body">
@@ -71,7 +71,7 @@
                     <h3>2.3 クラウドに一時保存される情報</h3>
                     <p>QRコードを生成する際、以下のデータがクラウドサーバーに一時保存されます：</p>
                     <ul>
-                        <li><strong>保存されるデータ:</strong> テキスト内容、添付ファイル、ファイルメタデータ（ファイル名、ファイル種類、ファイルサイズ）</li>
+                        <li><strong>保存されるデータ:</strong> テキスト内容、添付ファイル、ファイルメタデータ（ファイル名、ファイル種類、ファイルサイズ）、ファイル所有権管理用の内部識別子（Firebase UID）</li>
                         <li><strong>保存先:</strong> Cloudflare, Inc.（米国）が提供するCloudflare Workers及びR2 Storageを使用</li>
                         <li><strong>保存期間:</strong> 最大24時間（その後自動的に削除されます）</li>
                         <li><strong>個人情報:</strong> IPアドレス等の個人を特定する情報は保存されません</li>
@@ -90,13 +90,30 @@
 
                     <h3>2.5 端末内に保存される情報</h3>
                     <p>以下の情報は<strong>ユーザーの端末内にのみ</strong>保存され、クラウドや開発者のサーバーに送信されることはありません：</p>
+                    <h4>モバイルアプリ</h4>
                     <ul>
                         <li>QRコード送信・受信の履歴データ</li>
                         <li>添付ファイルのローカルコピー</li>
                         <li>アプリの設定情報（言語設定など）</li>
                     </ul>
+                    <h4>Web版アプリ</h4>
+                    <p>Web版では、ブラウザのストレージ機能を使用して以下の情報を端末内に保存します：</p>
+                    <ul>
+                        <li><strong>ローカルストレージ（localStorage）:</strong> QRコード送受信の履歴データ（ブラウザのキャッシュクリアまたは手動削除まで保持）</li>
+                        <li><strong>セッションストレージ（sessionStorage）:</strong> ログインセッショントークン（ブラウザのタブを閉じると自動削除）</li>
+                    </ul>
+                    <p class="note">これらのデータはユーザーのブラウザ内にのみ保存され、開発者のサーバーに送信されることはありません。</p>
 
-                    <h3>2.6 データ保持の概要</h3>
+                    <h3>2.6 アプリの更新確認</h3>
+                    <p>本アプリは、最新バージョンへのアップデートを確認するため、Expo（Expo, Inc.）のサーバーと通信を行います：</p>
+                    <ul>
+                        <li><strong>送信される情報:</strong> アプリのバージョン情報およびランタイムバージョン</li>
+                        <li><strong>個人情報:</strong> 個人を特定できる情報は送信されません</li>
+                        <li><strong>目的:</strong> アプリの更新プログラムの配信のみ</li>
+                    </ul>
+                    <p class="note">詳細は<a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">Expo社のプライバシーポリシー</a>をご確認ください。</p>
+
+                    <h3>2.7 データ保持の概要</h3>
                     <table class="data-table">
                         <thead>
                             <tr>
@@ -143,15 +160,28 @@
                                 <td>24時間（自動削除）</td>
                                 <td>HTTPS通信 / サーバー側管理</td>
                             </tr>
+                            <tr>
+                                <td>Web版ブラウザストレージ</td>
+                                <td>ブラウザ内</td>
+                                <td>キャッシュクリアまたは手動削除まで</td>
+                                <td>ブラウザ管理</td>
+                            </tr>
+                            <tr>
+                                <td>アプリ更新情報</td>
+                                <td>Expo</td>
+                                <td>更新確認時のみ</td>
+                                <td>HTTPS通信</td>
+                            </tr>
                         </tbody>
                     </table>
 
-                    <h3>2.7 Web版ログインセッション</h3>
+                    <h3>2.8 Web版ログインセッション</h3>
                     <p>モバイルアプリからWeb版へのQRスキャンログイン時、以下のセッションデータが生成されます：</p>
                     <ul>
                         <li><strong>セッショントークン</strong>（サーバー側で管理、24時間有効）</li>
                         <li><strong>Firebase UID</strong>（セッションとユーザーの紐付けに使用）</li>
                         <li><strong>ログイン日時</strong></li>
+                        <li><strong>サブスクリプションプラン情報</strong>（Web版での機能制限判定に使用）</li>
                     </ul>
                     <p>セッションは24時間後に自動的に無効化されます。Web版からのログアウト操作により即時無効化も可能です。</p>
                 </section>
@@ -194,8 +224,8 @@
                 </section>
 
                 <section class="legal-section" id="pp-4">
-                    <h2>4. カメラの使用</h2>
-                    <p>本アプリは、QRコードのスキャン機能を提供するためにカメラへのアクセスを要求します。</p>
+                    <h2>4. 端末の権限</h2>
+                    <p>本アプリは、機能を提供するために以下の端末権限を要求します。</p>
 
                     <h3>4.1 カメラ権限</h3>
                     <ul>
@@ -205,6 +235,22 @@
                         <li><strong>処理内容:</strong> QRコードの検出・デコードのみが行われ、その他の画像分析は行われません</li>
                         <li><strong>データ送信:</strong> カメラデータは外部に送信されません</li>
                         <li><strong>権限の取り消し:</strong> 端末の設定からいつでもカメラ権限を取り消すことができます（ただし、スキャン機能は使用できなくなります）</li>
+                    </ul>
+
+                    <h3>4.2 写真・メディア・ファイルへのアクセス権限</h3>
+                    <ul>
+                        <li><strong>使用目的:</strong> ファイル転送機能において、送信するファイル（画像・ドキュメント・音声・動画等）の選択および受信したファイルの端末への保存に使用</li>
+                        <li><strong>対象データ:</strong> ユーザーが明示的に選択したファイルのみにアクセスします</li>
+                        <li><strong>データ送信:</strong> ユーザーが選択したファイルは、QRコード生成のためクラウドに一時保存されます（2.3項参照）</li>
+                        <li><strong>権限の取り消し:</strong> 端末の設定からいつでも権限を取り消すことができます（ただし、ファイル転送機能は使用できなくなります）</li>
+                    </ul>
+
+                    <h3>4.3 クリップボードへのアクセス</h3>
+                    <ul>
+                        <li><strong>使用目的:</strong> QRコード読み取り結果やテキストのコピー＆ペースト機能に使用</li>
+                        <li><strong>データ送信:</strong> クリップボードのデータは外部に送信されません。端末内でのみ処理されます</li>
+                        <li><strong>システム許可:</strong> iOS 16以降では、クリップボードへのアクセス時にシステムの許可ダイアログが表示されます</li>
+                        <li><strong>アクセス範囲:</strong> ユーザーが明示的にコピーまたはペースト操作を行った場合にのみアクセスします</li>
                     </ul>
                 </section>
 
@@ -411,6 +457,7 @@
                         <li><strong>Firebase Authentication:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a></li>
                         <li><strong>RevenueCatプライバシーポリシー:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">https://www.revenuecat.com/privacy</a></li>
                         <li><strong>Cloudflareプライバシーポリシー:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">https://www.cloudflare.com/privacypolicy/</a></li>
+                        <li><strong>Expoプライバシーポリシー:</strong> <a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">https://expo.dev/privacy</a></li>
                     </ul>
                     <p>これらの外部サービスのプライバシー慣行については、各サービスのプライバシーポリシーをご確認ください。</p>
                 </section>
@@ -428,7 +475,7 @@
             </div>
 
             <div class="legal-footer">
-                <p>このプライバシーポリシーは、2026年3月11日より有効です。</p>
+                <p>このプライバシーポリシーは、2026年3月12日より有効です。</p>
             </div>
         </div>
     </main>
