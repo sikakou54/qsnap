@@ -42,7 +42,7 @@
         "@type": "SoftwareApplication",
         "name": "QSnap",
         "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "iOS 13.4+, Android 5.0+, Web (Chrome, Safari, Edge)",
+        "operatingSystem": "iOS 15.1+, Android 7.0+, Web (Chrome, Safari, Firefox, Edge)",
         "offers": {
             "@type": "Offer",
             "price": "0",
@@ -54,10 +54,13 @@
         "featureList": [
             "PC⇔スマホ間転送（Web版対応）",
             "QRコード読み取り・スキャナー",
+            "QRコンテンツ自動分類（URL・メール・電話・WiFi・位置情報・SMS・連絡先・カレンダー・テキストの9種対応）",
             "テキストからQRコード生成",
             "テキスト転送（最大1MB）",
             "ファイル転送（無料:最大10MB / Pro:最大1GB）",
             "送受信履歴管理",
+            "ダークモード対応",
+            "日本語・英語対応",
             "アカウント不要で利用開始・基本無料"
         ],
         "inLanguage": ["ja", "en"],
@@ -119,7 +122,7 @@
                 "name": "普通のQRコードリーダーとしても使えますか？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "はい、一般的なQRコードリーダーとしてもお使いいただけます。URL、テキスト、Wi-Fi情報など、あらゆるQRコードをスキャンできます。"
+                    "text": "はい、一般的なQRコードリーダーとしてもお使いいただけます。URL、メールアドレス、電話番号、WiFi設定、位置情報、SMS、連絡先（vCard）、カレンダー（iCal）、テキストの9種類を自動分類し、それぞれに最適なアクション（ブラウザで開く、電話発信、パスワードコピーなど）を提示します。"
                 }
             },
             {
@@ -143,7 +146,7 @@
                 "name": "どんなファイルを送れますか？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "写真、ドキュメントなどを送信できます。無料プランは最大10MB、Proプランなら最大1GBまで対応。複数ファイルの一括送信にも対応し、受信側はZIPでまとめてダウンロードできます。"
+                    "text": "画像（JPEG, PNG, WebP, GIF, HEIC）、ドキュメント（PDF, テキスト, CSV, JSON）、動画（MP4, MOV）、音声（MP3）など幅広い形式に対応しています。無料プランは最大10MB、Proプランなら最大1GBまで。複数ファイルの一括送信にも対応し、受信側はZIPでまとめてダウンロードできます。"
                 }
             },
             {
@@ -168,6 +171,22 @@
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "PC版Web（ブラウザ）でQRコードを生成し、スマホのQSnapアプリで読み取るか、逆にスマホで生成したQRコードをPCのWebカメラで読み取ります。ファイル転送の場合は、送信側でアップロード後に表示されるQRコードを受信側でスキャンしてダウンロードします。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "対応しているファイル形式は？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "画像（JPEG, PNG, WebP, GIF, HEIC）、ドキュメント（PDF, テキスト, CSV, JSON）、動画（MP4, MOV）、音声（MP3）に対応しています。複数ファイルの一括送信も可能で、受信側はZIPでまとめてダウンロードできます。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "QRコードの自動分類機能とは？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "スキャンしたQRコードの内容を自動的に判別する機能です。URL、メールアドレス、電話番号、WiFi設定、位置情報、SMS、連絡先（vCard）、カレンダー（iCal）、テキストの9種類に分類し、種類に応じた最適なアクション（ブラウザで開く、電話発信、WiFiパスワードのコピーなど）をワンタップで実行できます。"
                 }
             }
         ]
@@ -1242,34 +1261,6 @@
             </div>
         </section>
 
-        <!-- ========================
-             Social Proof Section
-             ======================== -->
-        <section class="section" aria-label="ユーザーの声">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">REVIEWS</span>
-                    <h2 class="section-title">ユーザーの声</h2>
-                </div>
-                <div class="reviews-grid">
-                    <div class="review-card animate-on-scroll">
-                        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="review-text">「PCで開いたURLをスマホに送りたい時にめちゃくちゃ便利。QRかざすだけで完了するのが最高」</p>
-                        <span class="review-author">— App Store レビューより</span>
-                    </div>
-                    <div class="review-card animate-on-scroll delay-1">
-                        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="review-text">「アカウント不要でサクッと使える。ファイル転送もできるので、AirDropの代わりとして重宝しています」</p>
-                        <span class="review-author">— App Store レビューより</span>
-                    </div>
-                    <div class="review-card animate-on-scroll delay-2">
-                        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="review-text">「会議でURLを参加者に配る時に使っています。QRを表示するだけなので手間なし。シンプルで気に入っています」</p>
-                        <span class="review-author">— App Store レビューより</span>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- ========================
              Features Section
@@ -1278,13 +1269,13 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-label">FEATURES</span>
-                    <h2 class="section-title">4つの機能、1つのアプリ</h2>
+                    <h2 class="section-title">6つの機能、1つのアプリ</h2>
                 </div>
                 <div class="features-grid">
                     <div class="feature-card animate-on-scroll">
                         <div class="feature-icon-wrap">&#x1F50D;</div>
                         <h3>QRコードリーダー</h3>
-                        <p>カメラをかざすだけでQRコードを読み取り。結果はワンタップでコピー。URL、テキスト、Wi-Fi情報など幅広く対応。</p>
+                        <p>カメラをかざすだけでQRコードを読み取り。結果はワンタップでコピー。URL、メール、電話、WiFi、位置情報、SMS、連絡先、カレンダー、テキストの9種類を自動分類。</p>
                     </div>
                     <div class="feature-card animate-on-scroll">
                         <div class="feature-icon-wrap">&#x26A1;</div>
@@ -1294,12 +1285,41 @@
                     <div class="feature-card animate-on-scroll">
                         <div class="feature-icon-wrap">&#x1F4C2;</div>
                         <h3>ファイル転送</h3>
-                        <p>写真やドキュメントをQRコードで送信。無料プランは最大10MB、Proプランなら最大1GB。複数ファイルの一括送信にも対応。</p>
+                        <p>写真・ドキュメント・動画・音声をQRコードで送信。無料プランは最大10MB、Proプランなら最大1GB。複数ファイルの一括送信にも対応。</p>
                     </div>
                     <div class="feature-card animate-on-scroll">
                         <div class="feature-icon-wrap">&#x1F4BB;</div>
                         <h3>Web版アプリ（PC対応）</h3>
                         <p>PCのブラウザからQRコードの生成・読み取り・ファイル転送が可能。アプリのインストール不要で、そのまま使えます。</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon-wrap">&#x1F4CB;</div>
+                        <h3>送受信履歴</h3>
+                        <p>送信・受信したデータは自動で履歴に保存。いつでも見返してQRコードを再生成できます。テキストコピーやファイル共有もワンタップ。</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon-wrap">&#x1F3AF;</div>
+                        <h3>QR自動分類</h3>
+                        <p>スキャンしたQRコードの内容を自動判別。URLならブラウザで開く、WiFiならパスワードコピー、電話番号なら発信など、最適なアクションを提示。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+             Trust Badges Section
+             ======================== -->
+        <section class="section" aria-label="セキュリティ" style="padding-top: 0; padding-bottom: 40px;">
+            <div class="container">
+                <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 8px; background: var(--bg-tertiary); padding: 12px 24px; border-radius: 100px; font-size: 14px; font-weight: 600; color: var(--text-secondary);">
+                        <span style="font-size: 18px;">&#x1F512;</span> HTTPS暗号化通信
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px; background: var(--bg-tertiary); padding: 12px 24px; border-radius: 100px; font-size: 14px; font-weight: 600; color: var(--text-secondary);">
+                        <span style="font-size: 18px;">&#x23F0;</span> 24時間でデータ自動削除
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px; background: var(--bg-tertiary); padding: 12px 24px; border-radius: 100px; font-size: 14px; font-weight: 600; color: var(--text-secondary);">
+                        <span style="font-size: 18px;">&#x1F464;</span> アカウント不要
                     </div>
                 </div>
             </div>
@@ -1331,7 +1351,7 @@
                     <div class="plan-card plan-pro">
                         <div class="plan-badge">おすすめ</div>
                         <div class="plan-name">Pro</div>
-                        <div class="plan-price">月額 / 年額</div>
+                        <div class="plan-price">月額300円 / 年額3,000円<small>（税込）</small></div>
                         <ul class="plan-features">
                             <li><span class="plan-check">&#x2713;</span> QRコードリーダー</li>
                             <li><span class="plan-check">&#x2713;</span> テキスト転送（最大1MB）</li>
@@ -1370,7 +1390,7 @@
                             <span>普通のQRコードリーダーとしても使えますか？</span>
                         </div>
                         <div class="faq-answer">
-                            はい、一般的なQRコードリーダーとしてもお使いいただけます。URL、テキスト、Wi-Fi情報など、あらゆるQRコードをスキャンできます。読み取った内容はワンタップでコピーできます。
+                            はい、一般的なQRコードリーダーとしてもお使いいただけます。URL、メールアドレス、電話番号、WiFi設定、位置情報、SMS、連絡先（vCard）、カレンダー（iCal）、テキストの9種類を自動分類し、それぞれに最適なアクションを提示します。読み取った内容はワンタップでコピーできます。
                         </div>
                     </div>
                     <div class="faq-item animate-on-scroll">
@@ -1388,7 +1408,7 @@
                             <span>どんなファイルを送れますか？</span>
                         </div>
                         <div class="faq-answer">
-                            写真、ドキュメントなどを送信できます。無料プランは最大10MB、Proプランなら最大1GBまで対応。複数ファイルの一括送信にも対応し、受信側はZIPでまとめてダウンロードできます。
+                            画像（JPEG, PNG, WebP, GIF, HEIC）、ドキュメント（PDF, テキスト, CSV, JSON）、動画（MP4, MOV）、音声（MP3）など幅広い形式に対応しています。無料プランは最大10MB、Proプランなら最大1GBまで。複数ファイルの一括送信にも対応し、受信側はZIPでまとめてダウンロードできます。
                         </div>
                     </div>
                     <div class="faq-item animate-on-scroll">
@@ -1434,6 +1454,24 @@
                         </div>
                         <div class="faq-answer">
                             PC版Web（ブラウザ）でQRコードを生成し、スマホのQSnapアプリで読み取るか、逆にスマホで生成したQRコードをPCのWebカメラで読み取ります。ファイル転送の場合は、送信側でアップロード後に表示されるQRコードを受信側でスキャンしてダウンロードします。
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            <span class="faq-q-mark">Q</span>
+                            <span>対応しているファイル形式は？</span>
+                        </div>
+                        <div class="faq-answer">
+                            画像（JPEG, PNG, WebP, GIF, HEIC）、ドキュメント（PDF, テキスト, CSV, JSON）、動画（MP4, MOV）、音声（MP3）に対応しています。複数ファイルの一括送信も可能で、受信側はZIPでまとめてダウンロードできます。
+                        </div>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <div class="faq-question">
+                            <span class="faq-q-mark">Q</span>
+                            <span>QRコードの自動分類機能とは？</span>
+                        </div>
+                        <div class="faq-answer">
+                            スキャンしたQRコードの内容を自動的に判別する機能です。URL、メールアドレス、電話番号、WiFi設定、位置情報、SMS、連絡先（vCard）、カレンダー（iCal）、テキストの9種類に分類し、種類に応じた最適なアクション（ブラウザで開く、電話発信、WiFiパスワードのコピーなど）をワンタップで実行できます。
                         </div>
                     </div>
                 </div>
