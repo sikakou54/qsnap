@@ -54,11 +54,11 @@
         "featureList": [
             "PC⇔スマホ間転送（Web版対応）",
             "QRコード読み取り・スキャナー",
-            "QRコンテンツ自動分類（URL・メール・電話・WiFi・位置情報・SMS・連絡先・カレンダー・テキストの9種対応）",
+            "QRコンテンツ自動分類（URL・メール・電話・WiFi・位置情報・SMS・連絡先・カレンダーなど15種対応）",
             "テキストからQRコード生成",
             "テキスト転送（最大1MB）",
             "ファイル転送（無料:最大10MB / Pro:最大1GB）",
-            "送受信履歴管理",
+            "送受信・スキャン履歴管理",
             "ダークモード対応",
             "日本語・英語対応",
             "アカウント不要で利用開始・基本無料"
@@ -122,7 +122,7 @@
                 "name": "普通のQRコードリーダーとしても使えますか？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "はい、一般的なQRコードリーダーとしてもお使いいただけます。URL、メールアドレス、電話番号、WiFi設定、位置情報、SMS、連絡先（vCard）、カレンダー（iCal）、テキストの9種類を自動分類し、それぞれに最適なアクション（ブラウザで開く、電話発信、パスワードコピーなど）を提示します。"
+                    "text": "はい、一般的なQRコードリーダーとしてもお使いいただけます。URL、メールアドレス、電話番号、WiFi設定、位置情報、SMS、連絡先（vCard/MECARD）、カレンダー（iCal）、暗号通貨、UPI、FTP、OTP、ストアリンク、テキストなど15種類を自動分類し、それぞれに最適なアクション（ブラウザで開く、電話発信、パスワードコピーなど）を提示します。スキャン結果は自動的にスキャン履歴に保存されます。"
                 }
             },
             {
@@ -154,7 +154,7 @@
                 "name": "送ったデータはどうなりますか？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "転送データはサーバーに一時的にアップロードされ、24時間後に自動削除されます。送受信履歴はお使いの端末内にのみ保存されます。"
+                    "text": "転送データはサーバーに一時的にアップロードされ、24時間後に自動削除されます。送受信・スキャン履歴はお使いの端末内にのみ保存されます。"
                 }
             },
             {
@@ -186,7 +186,7 @@
                 "name": "QRコードの自動分類機能とは？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "スキャンしたQRコードの内容を自動的に判別する機能です。URL、メールアドレス、電話番号、WiFi設定、位置情報、SMS、連絡先（vCard）、カレンダー（iCal）、テキストの9種類に分類し、種類に応じた最適なアクション（ブラウザで開く、電話発信、WiFiパスワードのコピーなど）をワンタップで実行できます。"
+                    "text": "スキャンしたQRコードの内容を自動的に判別する機能です。URL、メールアドレス、電話番号、WiFi設定、位置情報、SMS、連絡先（vCard/MECARD）、カレンダー（iCal）、暗号通貨、UPI、FTP、OTP、ストアリンクなど15種類に分類し、種類に応じた最適なアクション（ブラウザで開く、電話発信、WiFiパスワードのコピーなど）をワンタップで実行できます。スキャン結果はスキャン履歴として自動保存されます。"
                 }
             }
         ]
@@ -1304,7 +1304,7 @@
                     <div class="feature-card animate-on-scroll">
                         <div class="feature-icon-wrap">&#x1F50D;</div>
                         <h3>QRコードリーダー</h3>
-                        <p>カメラをかざすだけでQRコードを読み取り。結果はワンタップでコピー。URL、メール、電話、WiFi、位置情報、SMS、連絡先、カレンダー、テキストの9種類を自動分類。</p>
+                        <p>カメラをかざすだけでQRコードを読み取り。結果はワンタップでコピー。URL、WiFi、連絡先、カレンダーなど15種類を自動分類。</p>
                     </div>
                     <div class="feature-card animate-on-scroll">
                         <div class="feature-icon-wrap">&#x26A1;</div>
@@ -1323,8 +1323,8 @@
                     </div>
                     <div class="feature-card animate-on-scroll">
                         <div class="feature-icon-wrap">&#x1F4CB;</div>
-                        <h3>送受信履歴</h3>
-                        <p>送信・受信したデータは自動で履歴に保存。いつでも見返してQRコードを再生成できます。テキストコピーやファイル共有もワンタップ。</p>
+                        <h3>送受信・スキャン履歴</h3>
+                        <p>送信・受信・スキャンしたデータは自動で履歴に保存。いつでも見返してQRコードを再生成・再利用できます。テキストコピーやファイル共有もワンタップ。</p>
                     </div>
                     <div class="feature-card animate-on-scroll">
                         <div class="feature-icon-wrap">&#x1F3AF;</div>
@@ -1372,7 +1372,7 @@
                             <li><span class="plan-check">&#x2713;</span> QRコードリーダー</li>
                             <li><span class="plan-check">&#x2713;</span> テキスト転送（最大1MB）</li>
                             <li><span class="plan-check">&#x2713;</span> ファイル転送（最大10MB）</li>
-                            <li><span class="plan-check">&#x2713;</span> 送受信履歴</li>
+                            <li><span class="plan-check">&#x2713;</span> 送受信・スキャン履歴</li>
                             <li><span class="plan-check">&#x2713;</span> Web版（PC対応）</li>
                             <li style="color: var(--text-muted);">&#x2500;&#x2500; 広告あり</li>
                         </ul>
@@ -1385,7 +1385,7 @@
                             <li><span class="plan-check">&#x2713;</span> QRコードリーダー</li>
                             <li><span class="plan-check">&#x2713;</span> テキスト転送（最大1MB）</li>
                             <li><span class="plan-check" style="color: var(--accent);">&#x2713;</span> <strong>ファイル転送（最大1GB）</strong></li>
-                            <li><span class="plan-check">&#x2713;</span> 送受信履歴</li>
+                            <li><span class="plan-check">&#x2713;</span> 送受信・スキャン履歴</li>
                             <li><span class="plan-check">&#x2713;</span> Web版（PC対応）</li>
                             <li><span class="plan-check" style="color: var(--accent);">&#x2713;</span> <strong>広告なし</strong></li>
                         </ul>
@@ -1419,7 +1419,7 @@
                             <span>普通のQRコードリーダーとしても使えますか？</span>
                         </div>
                         <div class="faq-answer">
-                            はい、一般的なQRコードリーダーとしてもお使いいただけます。URL、メールアドレス、電話番号、WiFi設定、位置情報、SMS、連絡先（vCard）、カレンダー（iCal）、テキストの9種類を自動分類し、それぞれに最適なアクションを提示します。読み取った内容はワンタップでコピーできます。
+                            はい、一般的なQRコードリーダーとしてもお使いいただけます。URL、メールアドレス、電話番号、WiFi設定、位置情報、SMS、連絡先（vCard/MECARD）、カレンダー（iCal）、暗号通貨など15種類を自動分類し、それぞれに最適なアクションを提示します。読み取った内容はワンタップでコピーでき、スキャン履歴として自動保存されます。
                         </div>
                     </div>
                     <div class="faq-item animate-on-scroll">
@@ -1464,7 +1464,7 @@
                             <span>送ったデータはどうなりますか？</span>
                         </div>
                         <div class="faq-answer">
-                            転送データはサーバーに一時的にアップロードされ、24時間後に自動削除されます。送受信履歴はお使いの端末内にのみ保存されます。
+                            転送データはサーバーに一時的にアップロードされ、24時間後に自動削除されます。送受信・スキャン履歴はお使いの端末内にのみ保存されます。
                         </div>
                     </div>
                     <div class="faq-item animate-on-scroll">
@@ -1500,7 +1500,7 @@
                             <span>QRコードの自動分類機能とは？</span>
                         </div>
                         <div class="faq-answer">
-                            スキャンしたQRコードの内容を自動的に判別する機能です。URL、メールアドレス、電話番号、WiFi設定、位置情報、SMS、連絡先（vCard）、カレンダー（iCal）、テキストの9種類に分類し、種類に応じた最適なアクション（ブラウザで開く、電話発信、WiFiパスワードのコピーなど）をワンタップで実行できます。
+                            スキャンしたQRコードの内容を自動的に判別する機能です。URL、メールアドレス、電話番号、WiFi設定、位置情報、SMS、連絡先（vCard/MECARD）、カレンダー（iCal）、暗号通貨など15種類に分類し、種類に応じた最適なアクション（ブラウザで開く、電話発信、WiFiパスワードのコピーなど）をワンタップで実行できます。スキャン結果はスキャン履歴として自動保存されます。
                         </div>
                     </div>
                 </div>
