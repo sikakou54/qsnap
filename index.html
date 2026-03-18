@@ -14,9 +14,9 @@
     <meta name="google-play-app" content="app-id=com.sikakou.qrmemo">
 
     <!-- SEO基本メタタグ -->
-    <title>QSnap - QRコードリーダー＆データ転送 | PC⇔スマホ、QRで一瞬</title>
-    <meta name="description" content="【基本無料】PC⇔スマホ間でテキスト・ファイルをQRコードで即転送。QRコードリーダーとしても使える。アカウント不要。iOS/Android/PC対応。">
-    <meta name="keywords" content="QSnap, QRコードリーダー, QRコード読み取り, データ転送, テキスト転送, ファイル転送, PC連携, PC転送, ブラウザ転送, 端末間転送, 無料アプリ, QRスキャナー">
+    <title>QRコードリーダー＆PC⇔スマホ転送アプリ｜QSnap【無料】</title>
+    <meta name="description" content="【基本無料】QRコードリーダー＆PC⇔スマホ間テキスト・ファイル転送アプリ。ケーブル不要、アカウント不要で即利用。URL・WiFi・連絡先など15種のQR自動分類。iOS/Android/PC対応。">
+    <meta name="keywords" content="QSnap, QRコードリーダー, QRコード読み取り, QRコード 読み取り アプリ, QRコード 無料, QRコード 生成, QRスキャナー, データ転送, テキスト転送, ファイル転送, ファイル送信 QR, PC連携, PC転送, パソコン スマホ 転送, ブラウザ転送, 端末間転送, WiFi QRコード, 無料アプリ">
     <meta name="robots" content="index, follow">
     <meta name="author" content="QSnap">
 
@@ -29,8 +29,8 @@
 
     <!-- OGP (Open Graph Protocol) -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="QSnap - QRコードリーダー＆データ転送">
-    <meta property="og:description" content="【基本無料】PC⇔スマホ間でテキスト・ファイルをQRコードで即転送。ケーブル不要・ブラウザ対応。アカウント不要。iOS/Android/PC対応。">
+    <meta property="og:title" content="QRコードリーダー＆PC⇔スマホ転送アプリ｜QSnap【無料】">
+    <meta property="og:description" content="【基本無料】QRコードリーダー＆PC⇔スマホ間テキスト・ファイル転送アプリ。ケーブル不要、アカウント不要で即利用。URL・WiFi・連絡先など15種のQR自動分類。iOS/Android/PC対応。">
     <meta property="og:url" content="https://q-snap.net/">
     <meta property="og:site_name" content="QSnap">
     <meta property="og:locale" content="ja_JP">
@@ -39,12 +39,20 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="QSnap - PC⇔スマホ間QRコード転送アプリ">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="QSnap - QRコードリーダー＆データ転送">
-    <meta name="twitter:description" content="PC⇔スマホ間でテキスト・ファイルをQRコードで即転送。ケーブル不要・ブラウザ対応。アカウント不要。iOS/Android/PC対応。">
+    <meta name="twitter:title" content="QRコードリーダー＆PC⇔スマホ転送アプリ｜QSnap【無料】">
+    <meta name="twitter:description" content="【基本無料】QRコードリーダー＆PC⇔スマホ間テキスト・ファイル転送アプリ。ケーブル不要、アカウント不要。15種のQR自動分類。iOS/Android/PC対応。">
     <meta name="twitter:image" content="https://q-snap.net/image/ogp.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#059669">
+    <meta name="theme-color" content="#0f0f1a" media="(prefers-color-scheme: dark)">
+
+    <!-- Resource Hints -->
+    <link rel="preload" as="image" href="image/top.png">
 
     <!-- 構造化データ (JSON-LD) - SoftwareApplication -->
     <script type="application/ld+json">
@@ -54,13 +62,44 @@
         "name": "QSnap",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "iOS 16.0+, Android 7.0+, Web (Chrome, Safari, Firefox, Edge)",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "JPY",
-            "description": "基本無料 - Proプラン（有料）あり",
-            "availability": "https://schema.org/InStock"
-        },
+        "offers": [
+            {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "JPY",
+                "name": "Free",
+                "description": "基本無料プラン（広告あり・ファイル転送最大10MB）",
+                "availability": "https://schema.org/InStock"
+            },
+            {
+                "@type": "Offer",
+                "price": "300",
+                "priceCurrency": "JPY",
+                "name": "Pro（月額）",
+                "description": "広告なし・ファイル転送最大1GB",
+                "availability": "https://schema.org/InStock",
+                "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "price": "300",
+                    "priceCurrency": "JPY",
+                    "billingDuration": "P1M"
+                }
+            },
+            {
+                "@type": "Offer",
+                "price": "3000",
+                "priceCurrency": "JPY",
+                "name": "Pro（年額）",
+                "description": "広告なし・ファイル転送最大1GB（年額でお得）",
+                "availability": "https://schema.org/InStock",
+                "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "price": "3000",
+                    "priceCurrency": "JPY",
+                    "billingDuration": "P1Y"
+                }
+            }
+        ],
         "description": "PC⇔スマホ間でテキスト・ファイルをQRコードで即転送。QRコードリーダーとしても使える。アカウント不要で利用開始。",
         "featureList": [
             "PC⇔スマホ間転送（Web版対応）",
@@ -76,6 +115,17 @@
         ],
         "inLanguage": ["ja", "en"],
         "softwareVersion": "1.1.0",
+        "datePublished": "2025-10-15",
+        "dateModified": "2026-03-18",
+        "screenshot": "https://q-snap.net/image/top.png",
+        "author": {
+            "@type": "Organization",
+            "name": "QSnap"
+        },
+        "downloadUrl": [
+            "https://apps.apple.com/app/id6753971218",
+            "https://play.google.com/store/apps/details?id=com.sikakou.qrmemo"
+        ],
         "installUrl": [
             "https://apps.apple.com/app/id6753971218",
             "https://play.google.com/store/apps/details?id=com.sikakou.qrmemo"
@@ -102,6 +152,7 @@
         "@type": "Organization",
         "name": "QSnap",
         "url": "https://q-snap.net/",
+        "logo": "https://q-snap.net/image/icon.png",
         "contactPoint": {
             "@type": "ContactPoint",
             "email": "qsnap.developer@gmail.com",
@@ -208,17 +259,32 @@
     }
     </script>
 
-    <!-- 構造化データ (JSON-LD) - BreadcrumbList -->
+    <!-- 構造化データ (JSON-LD) - HowTo -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
+        "@type": "HowTo",
+        "name": "QSnapでPC⇔スマホ間のデータ転送をする方法",
+        "description": "QRコードを使ってPC⇔スマホ間でテキスト・ファイルを転送する手順",
+        "totalTime": "PT1M",
+        "step": [
             {
-                "@type": "ListItem",
+                "@type": "HowToStep",
                 "position": 1,
-                "name": "ホーム",
-                "item": "https://q-snap.net/"
+                "name": "テキストを入力 or ファイルを選択",
+                "text": "スマホアプリまたはPC版Web（ブラウザ）で、送りたいデータを準備。QRコードが自動で生成されます"
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "QRコードを表示 or スキャン",
+                "text": "画面に表示されたQRコードを、受け取り側のカメラで読み取ります。PC⇔スマホでも、スマホ同士でもOK"
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "受け取り完了",
+                "text": "テキストはその場でコピー、ファイルはワンタップでダウンロード。ケーブルもアカウントも不要"
             }
         ]
     }
@@ -1136,6 +1202,18 @@
             background: rgba(255, 255, 255, 0.25);
         }
     </style>
+
+    <!-- JavaScript無効時のフォールバック -->
+    <noscript>
+        <style>
+            .animate-on-scroll { opacity: 1 !important; transform: none !important; }
+            .hero-phone-img { opacity: 1 !important; }
+        </style>
+    </noscript>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5616727577619398"
+         crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -1168,7 +1246,7 @@
                     <div class="hero-badge">
                         <span>&#x1F4F1;</span> QRコードリーダー＆PC⇔スマホ転送
                     </div>
-                    <h1 class="hero-title">PC ⇔ スマホ、<br>QRで一瞬。</h1>
+                    <h1 class="hero-title">QRコードリーダー＆データ転送<br><span style="font-size: 0.85em;">PC ⇔ スマホ、QRで一瞬。</span></h1>
                     <p class="hero-subtitle">PCのブラウザからスマホへ、スマホからPCへ。テキストもファイルもQRコードで転送完了。ケーブル不要・アカウント不要・無料で使える。</p>
                     <div class="hero-actions">
                         <div class="store-badges">
@@ -1184,8 +1262,8 @@
                 </div>
                 <div class="hero-visual" aria-hidden="true">
                     <div class="hero-phone-carousel">
-                        <img src="image/top.png" alt="QSnap アプリ画面" class="hero-phone-img active">
-                        <img src="image/top2.png" alt="QSnap アプリ画面" class="hero-phone-img">
+                        <img src="image/top.png" alt="QSnap QRコードスキャナー画面" class="hero-phone-img active" width="280" height="607" fetchpriority="high">
+                        <img src="image/top2.png" alt="QSnap テキスト転送・QRコード生成画面" class="hero-phone-img" width="280" height="607">
                     </div>
                 </div>
             </div>
@@ -1197,8 +1275,8 @@
         <section id="scenes" class="section section-alt" aria-label="こんな場面に">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label">SCENES</span>
-                    <h2 class="section-title">こんなとき、QSnapが使えます</h2>
+                    <span class="section-label" lang="en">SCENES</span>
+                    <h2 class="section-title">QSnapの利用シーン — PC⇔スマホ転送・QR読み取り</h2>
                 </div>
                 <div class="scenes-grid">
                     <div class="scene-card animate-on-scroll">
@@ -1231,8 +1309,8 @@
         <section id="how-it-works" class="section" aria-label="使い方">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label">HOW IT WORKS</span>
-                    <h2 class="section-title">3ステップで完了</h2>
+                    <span class="section-label" lang="en">HOW IT WORKS</span>
+                    <h2 class="section-title">QRコードで簡単転送 — 3ステップで完了</h2>
                 </div>
                 <div class="steps-container">
                     <div class="step-item">
@@ -1263,7 +1341,7 @@
         <!-- ========================
              Why QSnap Section
              ======================== -->
-        <section class="why-section" aria-label="QSnapが選ばれる理由">
+        <section id="why-qsnap" class="why-section" aria-label="QSnapが選ばれる理由">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title" style="color: white;">QRリーダー + データ転送を<br>1つのアプリに</h2>
@@ -1310,8 +1388,8 @@
         <section id="features" class="section section-alt" aria-label="主な機能">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label">FEATURES</span>
-                    <h2 class="section-title">6つの機能、1つのアプリ</h2>
+                    <span class="section-label" lang="en">FEATURES</span>
+                    <h2 class="section-title">QSnapの主な機能 — QRリーダー・テキスト転送・ファイル送信</h2>
                 </div>
                 <div class="features-grid">
                     <div class="feature-card animate-on-scroll">
@@ -1354,8 +1432,8 @@
         <section id="plans" class="section" aria-label="プラン比較">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label">PLANS</span>
-                    <h2 class="section-title">あなたに合ったプランを</h2>
+                    <span class="section-label" lang="en">PLANS</span>
+                    <h2 class="section-title">料金プラン — 基本無料・Proプラン比較</h2>
                     <p class="section-desc">基本機能は無料。もっと快適に使いたい方にはProプラン。</p>
                 </div>
                 <div class="plans-grid">
@@ -1394,8 +1472,8 @@
         <section id="faq" class="section section-alt" aria-label="よくある質問">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label">FAQ</span>
-                    <h2 class="section-title">よくある質問</h2>
+                    <span class="section-label" lang="en">FAQ</span>
+                    <h2 class="section-title">QSnapのよくある質問（FAQ）</h2>
                 </div>
                 <div class="faq-list">
                     <div class="faq-item animate-on-scroll">
@@ -1504,7 +1582,7 @@
         <!-- ========================
              CTA Section
              ======================== -->
-        <section class="cta-section" aria-label="ダウンロード">
+        <section id="download" class="cta-section" aria-label="ダウンロード">
             <h2 class="cta-title">今すぐ始めよう。ダウンロードは無料です</h2>
             <p class="cta-desc">PC⇔スマホの転送も、QR読み取りも、これ1つで完結</p>
             <div class="cta-buttons">
